@@ -1,0 +1,20 @@
+{%extends 'base.html'%}
+{%block content%}
+  <body>
+    <header>
+      <h1>My Profile</h1>
+    </header>
+    <main>
+        <ul>
+            <li>Email: {{user.email}}</li>
+            <li>name: {{user.name}}</li>
+            <li>Second Name: {{user.second_name}}</li>
+            <li>age: {{user.age}}</li>
+          </ul>
+    </main>
+    <footer>
+      <p>&copy; 2023 My Company</p>
+    </footer>
+  </body>
+</html>
+{% endblock %}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Создать резюме</title>
+    <link rel="stylesheet" href="/static/css/create.css">
+    <style>body {
+      background-color: #40958e;
+    }</style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Создать резюме</h1>
+      <form method="POST" action="/resume" enctype="multipart/form-data">
+>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br>
+        <label for="phone">Телефон:</label><br>
+        <input type="tel" id="phone" name="phone"><br>
+        <label for="address">Адрес:</label><br>
+        <input type="text" id="address" name="address"><br>
+        <label for="education">Образование:</label><br>
+        <textarea id="education" name="education"></textarea><br>
+        <label for="experience">Опыт работы:</label><br>
+        <textarea id="experience" name="experience"></textarea><br>
+
+        <button type="submit" class="button">Создать резюме</button>
+      </form>
+    </div>
+  </body>
+</html>
